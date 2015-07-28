@@ -12,6 +12,10 @@
 <a href="<c:url value="/t" />">Spittles</a> |
 <a href="<c:url value="/spitter/register" />">Register</a>
 
+<form method="post" >
+    Name: <input type="text" name="username"/>
+    <input type="submit">
+</form>
 <c:forEach items="${posts}" var="post">
     <li id="post_<c:out value="post.id"/> ">
         (<c:out value="${post.description}"/>)
