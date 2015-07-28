@@ -12,15 +12,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class Home {
     private BlogRepository repository;
+
     @Autowired
-    public void setRepository(BlogRepository repositor)
+    public Home(BlogRepository repository)
     {
+        this.repository = repository;
 
     }
     @RequestMapping("/")
     public String home(Model model)
     {
-     model.addAttribute("Marion","message");
+     model.addAttribute("posts",repository.findPost(5,2));
         return "index";
     }
 
