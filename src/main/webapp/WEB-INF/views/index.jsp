@@ -11,7 +11,12 @@
 </head>
 
 <body>
-<script>$("#clickMe").html("Welcome");</script>
+<script>
+$(document).ready(function () {
+    $(h1).html("Welcome");
+    $('#clickMe').slideDown();
+});
+    </script>
 
 <h1>Marion's Blog</h1>
 <div id="#clickMe" >Hello</div>

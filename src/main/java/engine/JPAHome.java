@@ -1,4 +1,4 @@
-package controller;
+package engine;
 
 import model.BlogRepository;
 import model.Post;
@@ -11,17 +11,18 @@ import java.util.List;
  * Created by 24digital on 7/27/15.
  */
 @Repository
-public class JPAHome implements BlogRepository {
+public class JPAHome implements BlogRepository{
 
     List<Post> postList = new LinkedList<Post>();
-    public List<Post> findPost(int max, int count) {
-        for(int i= 0; i<max;i++)
-        {
+    public List<Post> findPost(String name) {
+
             Post post = new Post();
             post.setDescription("Test");
-            post.setTopic("Marion");
+            post.setTopic(name);
             postList.add(post);
-        }
+
         return postList;
     }
+
+
 }

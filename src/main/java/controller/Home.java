@@ -7,6 +7,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServlet;
+
 /**
  * Created by 24digital on 7/26/15.
  */
@@ -14,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class Home {
     private BlogRepository repository;
 
-    @Autowired
+@Autowired
     public Home(BlogRepository repository)
     {
         this.repository = repository;
@@ -24,7 +26,7 @@ public class Home {
     public String home(Model model)
     {
 
-     model.addAttribute("posts",repository.findPost(5,2));
+    // model.addAttribute("posts",repository.findPost(username));
         return "index";
     }
 
