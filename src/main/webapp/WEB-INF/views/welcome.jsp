@@ -10,6 +10,7 @@
           href="<c:url value="/WEB-INF/resources/style.css" />" >
 </head>
 <body>
+<h1>Hello</h1>
 <%=request.getAttribute("userid")%>
 </body>
 </html>

@@ -1,4 +1,4 @@
-package controller;
+package config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -15,7 +15,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
  */
 @Configuration
 @EnableWebMvc
-@ComponentScan("controller")
+@ComponentScan({"controller","model"})
 public class WebConfig extends WebMvcConfigurerAdapter
 
 {
