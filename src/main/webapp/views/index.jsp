@@ -25,12 +25,14 @@
 
 
 <h1>Marion's Blog</h1>
-<div id="#clickMe"><h1>Hello</h1></div>
+<p id="#me"><h1>Hello</h1></p>
+<p>Hellow and wadwda kkm wo vwefvmwkm ; vwkmivo;wimef k vmwvimwa;</p>
 <script>
-$(document).ready(function(){
-alert('hello marion');
-$(h1).html("<h1>Welcome</h1>");
-});
+    $(document).ready(function(){
+        $("p").click(function(){
+            $(this).hide();
+        });
+    });
 </script>
 <a href="<c:url value="/" />">Spittles</a> |
 <a href="<c:url value="/welcome/55" />">Register</a>
