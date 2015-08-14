@@ -1,7 +1,6 @@
 package engine;
 
 import model.BlogRepository;
-import model.Post;
 import org.springframework.stereotype.Repository;
 
 import java.util.LinkedList;

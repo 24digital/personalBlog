@@ -1,5 +1,7 @@
 package model;
 
+import model.IMPL.Post;
+
 import java.util.List;
 
 /**

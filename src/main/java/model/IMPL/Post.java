@@ -1,9 +1,11 @@
-package model;
+package model.IMPL;
+
+import model.Posts;
 
 /**
  * Created by 24digital on 7/26/15.
  */
-public class Post {
+public class Post extends Posts{
     private String topic;
     private String description;
 
