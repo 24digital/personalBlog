@@ -9,16 +9,7 @@
 
     <script type="text/javascript" src="<c:url value="/scripts/jquery-1.11.3.min.js"/>"></script>
 
-        <script>
-                $(document).ready(function() {
 
-                        var list = ["List A","List B","List C","List D","List E"];
-                        $.each(list, function( index, value ) {
-                                alert( index + ": " + value );
-                        });
-
-                });
-        </script>
 </head>
 
 <body>
@@ -29,9 +20,8 @@
 <p>Hellow and wadwda kkm wo vwefvmwkm ; vwkmivo;wimef k vmwvimwa;</p>
 <script>
     $(document).ready(function(){
-        $("p").click(function(){
-            $(this).hide();
-        });
+       var test = $('p').text();
+      $('p').text("hello Marion");
     });
 </script>
 <a href="<c:url value="/" />">Spittles</a> |
@@ -47,5 +37,11 @@
     </li>
 </c:forEach>
 
+<script>
+    $(document).ready(function(){
+        $('#me').ondblclick(function(){alert("Thank you")});
+    });
+
+</script>
 </body>
 </html>
